@@ -1,6 +1,19 @@
 <html>
 
 <head>
+
+
+    <script type="text/javascript">
+        function Init() {
+            var asd = document.getElementById("main");
+            if(asd.style.display =='none') {
+                asd.style.display ='block';
+            }else{
+                asd.style.display ='none';
+            }
+        }
+    </script>
+
     <meta charset="UTF-8">
     <style>
       
@@ -10,10 +23,12 @@
 <body>
     하노이의 탑 <br><br>
     <!-- 6개 -->
-    <input type="button" id="reset" value="초기화"><br>
+    <input id="reset" type="button" value="초기화" onclick="Init()"><br>
     <br>
-    <div id="main">
+    <div>
+
         <div style="height: 500px; border: solid orangered; float: left; width: 25%; margin: 20px;text-align: center;">
+         <div style="display: none"  id="main">         
             <span style="display:inline-block; background: red; border:1px solid black; width:10px; height:10px; margin: 1px;"></span>
             <span style="display:inline-block; background: red; border:1px solid black; width:10px; height:10px; margin: 1px;"></span>
             <span style="display:inline-block; background: red; border:1px solid black; width:10px; height:10px; margin: 1px;"></span>
@@ -56,9 +71,14 @@
             <br>
             <span style="display:inline-block; background: black; border:1px solid black; width:10px; height:10px; margin: 1px;"></span>
             <br>
+          </div>
+
         </div>
-        <div style="height: 500px; border: solid green; float: left; width: 25%; margin: 20px; text-align: center;"> second </div>
-        <div style="height: 500px; border: solid yellow; float: left; width: 25%; margin: 20px; text-align: center;"> </div>
+
+        <div style="height: 500px; border: solid green; float: left; width: 25%; margin: 20px; text-align: center; ">second</div>
+
+        <div style="height: 500px; border: solid blue; float: left; width: 25%; margin: 20px; text-align: center;">third </div>
+
     </div>
 </body>
 
