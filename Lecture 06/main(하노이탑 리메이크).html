@@ -1,0 +1,48 @@
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <style>
+        .box{
+            height: 500px; 
+            border: solid orangered; 
+            float: left; 
+            width: 25%; 
+            margin: 20px;
+            text-align: center;
+        }
+        .redb{
+            border:red solid ;
+        }
+        .greenb {
+            border:green solid ;
+        }
+        .yellowb{
+            border:blue solid ;
+        }
+        .selected{ 
+            border-width: 5px;
+        }
+        </style>
+</head>
+<body>
+    하노이의 탑 (황지웅) <br><br>
+<!-- 6개 -->
+<input id="reset" type="button" onclick="Init()" value="초기화"> <br>
+
+<div id="main">
+
+    <div  id="a" class="box redb">first</div>
+
+    <div id="b" class="box greenb">second</div>
+
+    <div id="c" class="box yellowb">third</div>
+
+</div>
+
+<script src = "java.js">
+
+</script>
+
+</body>
+
+</html>
